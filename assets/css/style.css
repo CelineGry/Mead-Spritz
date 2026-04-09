@@ -13,7 +13,7 @@ html, body {
   margin: 0;
   min-height: 100%;
   font-family: 'Oswald', system-ui, sans-serif;
-  background: #F2F4DF;
+  background: #ffffff;
   color: #1b2a31;
   scroll-padding-top: calc(var(--nav-offset) + 12px);
 }
@@ -107,7 +107,7 @@ body {
 
 .hero__nav-links a:hover,
 .hero__nav-links a:focus-visible {
-  color: #cb9f11;
+  color: #EBB812;
 }
 
 .hero__nav-cta {
@@ -161,6 +161,9 @@ body {
   font-size: clamp(2.05rem, 2.25vw, 3.2rem);
   line-height: 1;
   color: #3f5a69;
+  text-shadow: 
+  0 2px 3px rgba(0,0,0,0.25), 
+  0 -1px 1px rgba(255,255,255,0.4);
 }
 
 .hero__title {
@@ -170,6 +173,9 @@ body {
   letter-spacing: -0.02em;
   color: #EBB812;
   text-transform: uppercase;
+  text-shadow: 
+  0 2px 3px rgba(0,0,0,0.25), 
+  0 -1px 1px rgba(255,255,255,0.4);
 }
 
 .hero__copy {
@@ -196,7 +202,7 @@ body {
 
 .hero__button:hover {
   transform: translateY(-1px);
-  background: #cfa010;
+  background: #EBB812;
 }
 
 .mead-section {
@@ -249,10 +255,13 @@ body {
 
 .steps-card__title {
   margin: 0;
-  color: #efb103;
+  color: #EBB812;
   font-size: clamp(3.2rem, 4.8vw, 5.2rem);
   line-height: 1;
   text-transform: none;
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.15),
+    0 -1px 1px rgba(255,255,255,0.2);
 }
 
 .steps-list {
@@ -273,10 +282,13 @@ body {
 }
 
 .steps-list__number {
-  color: #efb103;
+  color: #EBB812;
   font-size: clamp(2.2rem, 3vw, 3.35rem);
   font-weight: 700;
   line-height: 1;
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.15),
+    0 -1px 1px rgba(255,255,255,0.2);
 }
 
 .steps-list__pill {
@@ -409,10 +421,10 @@ body {
 .story-card__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   padding: 12px clamp(8px, 2vw, 24px);
-  text-align: center;
+  text-align: right;
 }
 
 .story-card__title {
@@ -420,9 +432,12 @@ body {
   font-size: clamp(3.4rem, 5vw, 5.9rem);
   line-height: 0.97;
   letter-spacing: 0.01em;
-  color: #efb103;
+  color: #EBB812;
   text-transform: uppercase;
-  text-shadow: 0 4px 10px rgba(185, 143, 11, 0.18);
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.25),
+    0 -1px 1px rgba(255,255,255,0.4);
+  
 }
 
 .story-card__subtitle {
@@ -430,14 +445,23 @@ body {
   color: #487181;
   font-size: clamp(1.8rem, 3vw, 3.15rem);
   line-height: 1.06;
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.25),
+    0 -1px 1px rgba(255,255,255,0.4);
+  
 }
 
 .story-card__text {
   margin: 0;
-  max-width: 27ch;
+  max-width: 66ch;
   color: #77746a;
-  font-size: clamp(1.35rem, 1.65vw, 1.95rem);
+  font-size: 25px;
   line-height: 1.4;
+  padding-top: 20px;
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.15),
+    0 -1px 1px rgba(255,255,255,0.2);
+  
 }
 
 .mead-tabs {
@@ -496,9 +520,12 @@ body {
   font-size: clamp(4rem, 5.4vw, 6.35rem);
   line-height: 0.96;
   letter-spacing: 0.01em;
-  color: #efb103;
+  color: #EBB812;
   text-transform: uppercase;
-  text-shadow: 0 4px 10px rgba(185, 143, 11, 0.18);
+  text-shadow: 
+  0 2px 3px rgba(0,0,0,0.25), 
+  0 -1px 1px rgba(255,255,255,0.4);
+  
 }
 
 .mead-card__subtitle {
@@ -506,14 +533,23 @@ body {
   color: #487181;
   font-size: clamp(2rem, 3vw, 3.3rem);
   line-height: 1.05;
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.25),
+    0 -1px 1px rgba(255,255,255,0.4);
+  
 }
 
 .mead-card__text {
   margin: 0;
-  max-width: 640px;
+  max-width: 540px;
   color: #77746a;
-  font-size: clamp(1.35rem, 1.7vw, 1.95rem);
+  font-size: clamp(1.35rem, 1.5vw, 1.55rem);
   line-height: 1.45;
+  padding-top: 20px;
+  text-shadow:
+    0 2px 3px rgba(0,0,0,0.15),
+    0 -1px 1px rgba(255,255,255,0.2);
+  
 }
 
 .mead-card__visual {
@@ -529,7 +565,7 @@ body {
 
 .mead-card__marker {
   position: absolute;
-  left: 52%;
+  left: 50%;
   top: 62%;
   display: grid;
   place-items: center;
@@ -550,15 +586,16 @@ body {
 }
 
 .mead-card__marker-ring {
-  width: 92px;
-  height: 92px;
+  width: 48px;
+  height: 48px;
   background: rgba(255, 255, 255, 0.6);
   animation: meadMarkerPulse 2.3s ease-in-out infinite;
+
 }
 
 .mead-card__marker-core {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   background: #fff;
 }
 
@@ -590,6 +627,10 @@ body {
   visibility: visible;
   transform: translateY(0) scale(1);
   pointer-events: auto;
+  
+}
+.mead-card__marker-ring:hover {
+  border: 2px solid white;
 }
 
 .mead-card__marker:hover .mead-card__marker-ring,
@@ -793,6 +834,9 @@ body {
   .manifesto-card__text {
     max-width: 30ch;
     font-size: clamp(1.25rem, 3.8vw, 1.65rem);
+    text-shadow:
+    0 2px 3px rgba(0,0,0,0.15),
+    0 -1px 1px rgba(255,255,255,0.2);
   }
 
   .manifesto-card__image {
