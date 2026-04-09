@@ -1,10 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>boilerplate</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Mead Spritz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="site-header">
+        <nav class="hero__nav" aria-label="Hovednavigation">
+          <div class="hero__nav-inner">
+            <a class="hero__brand" href="#" aria-label="Mead Spritz">
+              <img class="hero__brand-logo" src="assets/img/MEAD Spritz LOGO.svg" alt="Mead Spritz" />
+            </a>
+
+            <ul class="hero__nav-links">
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#you">You</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#merch">Merch</a></li>
+            </ul>
+
+            <a class="hero__nav-cta" href="#shop">Grab a Spritz</a>
+          </div>
+        </nav>
+    </header>
+
+    <section class="intro-section" aria-labelledby="intro-title">
+      <section class="hero" id="shop" aria-labelledby="hero-title">
+        <div class="hero__inner">
+        <section class="hero__content">
+          <p class="hero__eyebrow">Every life is a mosaic</p>
+          <h1 class="hero__title" id="hero-title">Be you again</h1>
+        </section>
+        </div>
+      </section>
+
+      <section class="mead-section" id="about" aria-labelledby="about-title">
+        <div class="mead-tabs" aria-label="Mead sections">
+          <a class="mead-tabs__item" href="#about-title">Mead</a>
+          <a class="mead-tabs__item" href="#you">Mosaic</a>
+          <a class="mead-tabs__item" href="#contact">Life</a>
+        </div>
+
+        <article class="mead-card">
+          <div class="mead-card__content">
+            <h2 class="mead-card__title" id="about-title">WHAT IS<br />MEAD SPRITZ?</h2>
+            <p class="mead-card__subtitle">Discover the pieces, that are you</p>
+            <p class="mead-card__text">
+              Mead is an alcoholic drink that is made by fermenting honey with
+              water. It is one of the oldest known alcoholic drinks.<br /><br />
+              Mix this with prosseco and sparkling water,<br />
+              and you got yourself, a Mead Spritz
+            </p>
+          </div>
+
+          <div class="mead-card__visual">
+            <img
+              class="mead-card__image"
+              src="assets/img/Sommerdrik ved solnedgang.png"
+              alt="Mead Spritz ved solnedgang"
+            />
+
+            <button class="mead-card__marker" type="button" aria-label="Mead product point">
+              <span class="mead-card__marker-ring" aria-hidden="true"></span>
+              <span class="mead-card__marker-core" aria-hidden="true"></span>
+            </button>
+
+            <div class="mead-product">
+              <img
+                class="mead-product__thumb"
+                src="assets/img/Mead Spritz Citrus front mockup.webp"
+                alt="Mead Spritz Lemon Breeze"
+              />
+
+              <div class="mead-product__content">
+                <strong>Mead Spritz Lemon Breeze</strong>
+                <span>5.0% alc, 33cl</span>
+                <span class="mead-product__price">55,- DKK</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="story-section" id="you" aria-labelledby="story-title">
+        <article class="story-card">
+        <div class="story-card__visual">
+          <img
+            class="story-card__image"
+            src="assets/img/8d0d68c2fe5c9d224abb4e7ceb457992.jpg"
+            alt="Mosaikfigur"
+          />
+        </div>
+
+          <div class="story-card__content">
+          <h2 class="story-card__title" id="story-title">SO, WHAT IS<br />MEAD SPRITZ?</h2>
+          <p class="story-card__subtitle">Start piecing the puzzle together</p>
+          <p class="story-card__text">To traditions shaped by time , brought together in a moment.</p>
+        </div>
+        </article>
+      </section>
+
+      <section class="manifesto-section" id="contact" aria-labelledby="manifesto-title">
+        <article class="manifesto-card">
+        <div class="manifesto-card__content">
+          <h2 class="visually-hidden" id="manifesto-title">Mosaic story</h2>
+          <p class="manifesto-card__text">
+            There’s a moment in life when everything seems to fall into place.<br /><br />
+            Not because life has been perfect,<br /><br />
+            but because every single moment has left its mark.<br /><br />
+            Like a mosaic.<br /><br />
+            A mosaic is made up of thousands of small pieces.<br /><br />
+            None of them are perfect on their own.<br /><br />
+            But together, they form something beautiful.<br /><br />
+            Life is the same.<br /><br />
+            Love, laughter, tears.<br /><br />
+            All the people you’ve met and loved<br /><br />
+            become small pieces in the mosaic of your life.<br /><br />
+            And one day, you find yourself standing there...<br /><br />
+            In the middle of your own work of art.
+          </p>
+        </div>
+
+        <div class="manifesto-card__visual">
+          <img
+            class="manifesto-card__image"
+            src="assets/img/c7db9b3b02a0c73280d5f134ebb46710.webp"
+            alt="Skål med glas i sollys"
+          />
+        </div>
+      </article>
+    </section>
+
+    <section class="steps-section" aria-label="What now steps">
+      <article class="steps-card">
+        <div class="steps-card__media">
+          <video
+            class="steps-card__video"
+            src="assets/video/The interview landingpage - (16x9).mp4"
+            autoplay
+            muted
+            loop
+            playsinline controls
+          ></video>
+        </div>
+
+        <div class="steps-card__content">
+          <h2 class="steps-card__title">What now?</h2>
+
+          <ol class="steps-list" aria-label="Three simple steps">
+            <li class="steps-list__item">
+              <span class="steps-list__number">1.</span>
+              <a class="steps-list__pill" href="#">Grab the girls</a>
+            </li>
+            <li class="steps-list__item">
+              <span class="steps-list__number">2.</span>
+              <a class="steps-list__pill" href="#">Go to the bar</a>
+            </li>
+            <li class="steps-list__item">
+              <span class="steps-list__number">3.</span>
+              <a class="steps-list__pill" href="#">Share your pieces</a>
+            </li>
+          </ol>
+        </div>
+      </article>
+    </section>
+
+    </section>
+
+    <footer class="site-footer" id="merch" aria-label="Footer links">
+      <div class="site-footer__inner">
+        <div class="site-footer__column">
+          <a href="#">Customer service</a>
+          <a href="#">Return policy</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact us</a>
+          <a href="#">Cookiepolitik</a>
+          <a href="#">Cookie settings</a>
+        </div>
+
+        <div class="site-footer__column">
+          <a href="#">Find us here</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Events</a>
+          <a href="#">Website</a>
+          <a href="#">Fanø Bryghus</a>
+        </div>
+
+        <div class="site-footer__column">
+          <a href="#">About Mead Spritz</a>
+          <a href="#">Company</a>
+          <a href="#">PR</a>
+          <a href="#">Sales</a>
+        </div>
+
+        <div class="site-footer__column">
+          <a href="#">Community</a>
+          <a href="#">CSR</a>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
 </html>
