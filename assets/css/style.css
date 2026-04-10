@@ -443,7 +443,7 @@ body {
 .story-card__subtitle {
   margin: 28px 0 16px;
   color: #487181;
-  font-size: clamp(1.8rem, 3vw, 3.15rem);
+  font-size: clamp(1.8rem, 3vw, 3rem);
   line-height: 1.06;
   text-shadow:
     0 2px 3px rgba(0,0,0,0.25),
